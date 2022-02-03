@@ -1,19 +1,16 @@
 // 3. Write a “person” class to hold all the details.
-
-
-function Person() {
-    this.firstName = "unknown";
-    this.lastName = "unknown";
+class Car {
+  constructor(name, city, year, degree,phonenumber) {
+    this.name = name;
+    this.city = city;
+    this.year = year;
+    this.degree = degree;
+    this.phonenumber = phonenumber;
+  }
 }
 
-var person1 = new Person();
-person1.firstName = "Kalai";
-person1.lastName = "vani";
-            
-console.log(person1.firstName + " " + person1.lastName);
+const myCar = new Car("Kalaivani", "Coimbatore" ,2018,"B.SC",9876543210);
 
-var person2 = new Person();
-person2.firstName = "Swathi";
-person2.lastName = "Sharu";
-            
-console.log(person2.firstName + " " + person2.lastName );
+console.log(myCar.name + " " + myCar.city);
+console.log(myCar.degree + " " + myCar.year);
+console.log(myCar.phonenumber);
